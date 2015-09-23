@@ -17,5 +17,6 @@ augroup php_files
 
     " Moodle specific
     au BufRead /home/nicols/git/software/moodle/* :so /home/nicols/git/software/useful/docs/master.vim
+    au FileType php let g:syntastic_php_phpcs_args='--standard=/Users/nicols/integration/tools/moodle-local_codechecker/moodle/ruleset.xml'
 
 augroup END
