@@ -114,6 +114,9 @@ highlight DiffText          ctermfg=black      ctermbg=red     cterm=NONE
     " F4 = show / hide invisible characters
     set pastetoggle=<F4>
 
+    " F8 = open the file under the cursor in a new split.
+    :map <F8> :vertical wincmd f<CR>
+
     " F10 = Save And Make
     noremap <F10> :w:make
     noremap! <F10> :w:make
